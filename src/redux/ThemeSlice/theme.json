@@ -1,0 +1,22 @@
+{
+    "theme_color": {
+      "primary": "#ff630b",
+      "primaryDark": "#d74e00",
+      "secondary": "#fae7dd",
+      "inputText": "#534d59",
+      "bgColor": "#e5e5e5",
+      "borderColor": "#d2d4d3",
+      "navHover": "#fff7f2",
+      "bodyBg": "#f9fafc",
+      "grayBg": "#EFF0F2",
+      "googleBg": "#f2f2f2",
+      "errorColor": "#C8190D",
+      "lightPrimary": "#fee0ce",
+      "navLink": "#474747",
+      "textColor": "#1b2128",
+      "textPlaceholder": "#b4b4b4"
+    },
+    "site_logo": ""
+  }
+  
+  

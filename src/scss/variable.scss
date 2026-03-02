@@ -1,0 +1,162 @@
+$image-path: "/assets/images";
+
+@import url("https://fonts.googleapis.com/css2?family=Alike+Angular&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jockey+One&family=Outfit:wght@100..900&display=swap");
+
+// // This color will be same as redux state theme.json and fallback of redux will always
+// $primary-color: var(--theme-primary, #ff630b);
+// $primary-color-dark: var(--theme-primary-dark, #d74e00);
+// $secondary-color: var(--theme-secondary, #fae7dd);
+// $input-text: var(--theme-input-text, #534d59);
+// $bgColor: var(--theme-bg-color, #e5e5e5);
+// $border-color: var(--theme-border-color, #d2d4d3);
+// $nav-hover: var(--theme-nav-hover, #fff7f2);
+// $bodyBg: var(--theme-body-bg, #f9fafc);
+// $grayBg: var(--theme-gray-bg, #EFF0F2);
+// $googleBg: var(--theme-google-bg, #f2f2f2);
+// $errorColor: var(--theme-error-color, #C8190D);
+// $light_primary: var(--theme-light-primary, #fee0ce);
+
+// /* text-color*/
+// $nav-link: var(--theme-nav-link, #474747);
+// $text-color: var(--theme-text-color, #1b2128);
+// $text-placeholder: var(--theme-text-placeholder, #b4b4b4);
+
+/* =========================
+   THEME : CORE COLORS
+   ========================= */
+$primary-color: var(--theme-primary, #ff630b);          // brand primary
+$primary-color-dark: var(--theme-primary-dark, #d74e00); // primary dark / hover
+$secondary-color: var(--theme-secondary, #fae7dd);       // secondary accent
+$light_primary: var(--theme-light-primary, #fee0ce);     // light primary tint
+$primary-burnt: var(--theme-primary-burnt, #993b07);     // burnt primary shade
+
+/* =========================
+   THEME : BACKGROUNDS
+   ========================= */
+$bodyBg: var(--theme-body-bg, #f9fafc);                  // body background
+$bgColor: var(--theme-bg-color, #e5e5e5);                // page background
+$grayBg: var(--theme-gray-bg, #EFF0F2);                  // gray section bg
+$googleBg: var(--theme-google-bg, #f2f2f2);              // google button bg
+$nav-hover: var(--theme-nav-hover, #fff7f2);             // nav hover bg
+$input-bg-soft: var(--theme-input-bg-soft, #feeee580);   // soft input bg
+$input-bg-strong: var(--theme-input-bg-strong, #feeee5); // strong input bg
+$disabled-bg: var(--theme-disabled-bg, #e8eaeb);         // disabled bg
+$primary-soft-bg: var(--theme-primary-soft-bg, #ff630b21); // primary soft bg
+$primary-img: var(--theme-primary-img, intial); // primary soft bg
+
+/* =========================
+   THEME : TEXT COLORS
+   ========================= */
+$text-color: var(--theme-text-color, #1b2128);           // primary text
+$text-secondary: var(--theme-text-secondary, #84818a);   // secondary text
+$text-dark: var(--theme-text-dark, #333333);             // dark headings
+$text-subtle: var(--theme-text-subtle, #666666);         // subtle text
+$text-placeholder: var(--theme-text-placeholder, #b4b4b4); // placeholders
+$nav-link: var(--theme-nav-link, #474747);                // nav links
+$input-text: var(--theme-input-text, #534d59);            // input text
+
+/* =========================
+   THEME : BORDERS & DIVIDERS
+   ========================= */
+$border-color: var(--theme-border-color, #d2d4d3);        // default border
+$border-light: var(--theme-border-light, #e4e4e4);        // light border
+$border-stone: var(--theme-border-stone, #838080);        // radio/checkbox
+$divider-muted: var(--theme-divider-muted, #cfdfe2);      // divider line
+$primary-soft-border: var(--theme-primary-soft-border, #ff630b7a); // soft border
+
+/* =========================
+   THEME : STATUS & FEEDBACK
+   ========================= */
+$errorColor: var(--theme-error-color, #C8190D);           // error
+$errorLightColor: var(--theme-error-light-color, #f7a7a7); // error bg
+$errorStrongColor: var(--theme-error-strong-color, #f12011); // error strong
+$dangerColor: var(--theme-danger-color, #dc3545);         // danger
+$success-color: var(--theme-success-color, #28a745);      // success
+$success-bg: var(--theme-success-bg, #f8fff9);            // success bg
+
+/* =========================
+   THEME : OVERLAYS
+   ========================= */
+$overlay-light: var(--theme-overlay-light, rgba(0, 0, 0, 0.1)); // modal overlay
+$overlay-strong: var(--theme-overlay-strong, rgba(0, 0, 0, 0.6));
+$overlay-heavy: var(--theme-overlay-heavy, #00000088);
+
+/* =========================
+   THEME : SHADOWS
+   ========================= */
+$shadow-tiny: var(--theme-shadow-tiny, #00000026);
+$shadow-soft: var(--theme-shadow-soft, #b4bfcd33);
+$shadow-gray: var(--theme-shadow-gray, #c8c8c8);
+$shadow-muted: var(--theme-shadow-muted, #3333334d);
+$shadow-strong: var(--theme-shadow-strong, #00000040);
+$shadow-stronger: var(--theme-shadow-stronger, #00000050);
+
+/* =========================
+   THEME : CHIPS / BADGES
+   ========================= */
+$chip-gray: var(--theme-chip-gray, #eeeeee);
+
+$chip-yes-bg: var(--theme-chip-yes-bg, #d8e9ff);
+$chip-yes-border: var(--theme-chip-yes-border, #bad8ff);
+$chip-yes-text: var(--theme-chip-yes-text, #2b77ff);
+
+$chip-no-bg: var(--theme-chip-no-bg, #ffe1df);
+$chip-no-border: var(--theme-chip-no-border, #ffc9c5);
+$chip-no-text: var(--theme-chip-no-text, #ff4033);
+
+$chip-high-bg: var(--theme-chip-high-bg, #d5ffed);
+$chip-high-border: var(--theme-chip-high-border, #aeffdb);
+$chip-high-text: var(--theme-chip-high-text, #00e97f);
+
+$chip-medium-bg: var(--theme-chip-medium-bg, #fff4c6);
+$chip-medium-border: var(--theme-chip-medium-border, #ffe788);
+$chip-medium-text: var(--theme-chip-medium-text, #f99f07);
+
+/* =========================
+   THEME : ACCENTS
+   ========================= */
+$accent-orange: var(--theme-accent-orange, #ff6b35);
+$accent-orange-dark: var(--theme-accent-orange-dark, #e55a2b);
+$accent-orange-strong: var(--theme-accent-orange-strong, #ff3d00);
+$accent-cream: var(--theme-accent-cream, #fff9f7);
+$accent-peach: var(--theme-accent-peach, #ffeade);
+$link-teal: var(--theme-link-teal, #00758f);
+
+/* =========================
+   THEME : BASE / UTILITY
+   ========================= */
+$white: var(--theme-white, #ffffff);
+$black: var(--theme-black, #000000);
+$muted-gray: var(--theme-muted-gray, #c3c3c3);
+$gray-light: var(--theme-gray-light, #e0e0e0);
+$placeholder-light: var(--theme-placeholder-light, #bfbfbf);
+$scrollbar-track-bg: var(--theme-scrollbar-track-bg, #f1f1f1);
+$scrollbar-thumb-hover: var(--theme-scrollbar-thumb-hover, #555555);
+
+/* =========================
+   FONT FAMILY (NO THEME)
+   ========================= */
+$jockyOne: "Jockey One", sans-serif;
+$alike: "Alike Angular", serif;
+$inter: "Inter", sans-serif;
+
+
+
+/* font-size*/
+$fs-xxl: 40px;
+$fs-xl: 32px;
+$fs-lg: 24px;
+$fs-md: 18px;
+$fs-sm: 16px;
+$fs-xs: 14px;
+$fs-xxs: 12px;
+
+@media (min-width: 1920px) {
+  $fs-xxl: 2.08vw;  // 40px
+  $fs-xl:  1.67vw;  // 32px
+  $fs-lg:  1.25vw;  // 24px
+  $fs-md:  0.94vw;  // 18px
+  $fs-sm:  0.83vw;  // 16px
+  $fs-xs:  0.73vw;  // 14px
+  $fs-xxs: 0.63vw;  // 12px
+}
