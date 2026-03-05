@@ -12,7 +12,8 @@ export default function route() {
       icon: adminRoutesMap.DASHBOARD.icon,
       belongsToHeader: false,
       belongsToSidebar: true,
-      private: true,
+      // private: true, // Commented: allow dashboard without login for now
+      common: true, // Bypass auth check - accessible without login
       routeAccess: ["admin"],
     },
   ];

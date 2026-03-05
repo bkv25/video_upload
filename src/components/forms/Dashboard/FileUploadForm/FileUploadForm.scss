@@ -1,0 +1,200 @@
+@use "../../../../scss/variable" as *;
+
+.file-upload-form {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.file-upload-form-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.file-upload-strategy-selector {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.file-upload-strategy-select {
+  width: auto;
+  min-width: 160px;
+  font-size: $fs-xxs;
+}
+
+.file-upload-strategy-badge {
+  font-size: $fs-xxs;
+  color: $text-secondary;
+  strong {
+    color: $primary-color;
+  }
+}
+
+.file-upload-chunk-info {
+  strong {
+    color: $primary-color;
+  }
+}
+
+.file-upload-zone-wrapper {
+  margin-bottom: 1.5rem;
+}
+
+.file-upload-zone {
+  position: relative;
+  border: 2px dashed $border-color;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  background: $grayBg;
+  transition: border-color 0.2s, background-color 0.2s;
+  cursor: pointer;
+
+  &:hover:not(.is-disabled) {
+    border-color: $primary-soft-border;
+    background: $input-bg-soft;
+  }
+
+  &.is-dragging {
+    border-color: $primary-color;
+    background: $input-bg-strong;
+  }
+
+  &.has-file {
+    border-style: solid;
+    border-color: $primary-soft-border;
+    background: $primary-soft-bg;
+  }
+
+  &.has-error {
+    border-color: $errorColor;
+    background: $errorLightColor;
+  }
+
+  &.is-disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+}
+
+.file-upload-input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+.file-upload-placeholder,
+.file-upload-selected {
+  pointer-events: none;
+}
+
+.file-upload-input {
+  pointer-events: auto;
+}
+
+.file-upload-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.file-upload-text {
+  margin: 0 0 0.25rem;
+  font-size: $fs-sm;
+  color: $text-color;
+}
+
+.file-upload-browse {
+  color: $primary-color;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.file-upload-hint {
+  margin: 0;
+  font-size: $fs-xxs;
+  color: $text-secondary;
+}
+
+.file-upload-selected {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.file-upload-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+.file-upload-name {
+  font-weight: 600;
+  color: $text-color;
+  word-break: break-all;
+}
+
+.file-upload-size {
+  font-size: $fs-xxs;
+  color: $text-secondary;
+}
+
+.file-upload-remove {
+  background: $errorColor;
+  color: $white;
+  border: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  pointer-events: auto;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background: $errorStrongColor;
+  }
+}
+
+.file-upload-error {
+  margin: 0.5rem 0 0;
+  font-size: $fs-xxs;
+  color: $errorColor;
+}
+
+.metadata-form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0 1.5rem;
+
+  @media (min-width: 576px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.file-upload-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.file-upload-progress {
+  .progress-bar {
+    transition: width 0.3s ease;
+  }
+}

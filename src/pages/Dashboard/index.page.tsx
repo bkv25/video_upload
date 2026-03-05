@@ -1,8 +1,10 @@
-import React from 'react'
+import FileUploadForm from '../../components/forms/Dashboard/FileUploadForm'
 
 const Dashboard = () => {
   return (
-    <div>Dashboard</div>
+    <>
+    <FileUploadForm />
+    </>
   )
 }
 
