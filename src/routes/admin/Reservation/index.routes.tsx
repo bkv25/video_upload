@@ -22,7 +22,7 @@ export default function route() {
           element: <ChildOne />,
           belongsToHeader: true,
           belongsToSidebar: true,
-          private: true,
+          private: false,
         },
         {
             path: adminRoutesMap.CHILD_TWO.path,
@@ -30,7 +30,7 @@ export default function route() {
             element: <ChildTwo />,
             belongsToHeader: true,
             belongsToSidebar: true,
-            private: true,
+            private: false,
           }
       ],
     },

@@ -55,6 +55,6 @@ export default function route() {
     // ...TourRoutes(),
     // ...Operations(),
     // ...SettingsRoutes(),
-    ...ReservationRoutes(),
+    // ...ReservationRoutes(),
   ];
 }

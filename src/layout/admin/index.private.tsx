@@ -1,7 +1,7 @@
 import { Suspense, useCallback, useEffect, useState } from "react";
 import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import { AppLayout } from "..";
-import { Col, Container, Row } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import AdminSidebar from "../../components/Sidebar";
 import AdminHeader from "../../components/Header";
 
@@ -34,27 +34,23 @@ function AdminPrivateLayout() {
       >
         <Container fluid>
           <Row className={`flex-nowrap ${isOpen ? "sidebar-hide" : ""}`}>
-            <Col md={3}>
-              <AdminSidebar />
-            </Col>
-            <Col md={9}>
+            <AdminSidebar />
+            <div className="main-content">
               <AdminHeader handleClickSidebar={handleClickSidebar} />
-              <div className="main-content">
-                <div className="main-inner p-3">
-                  <Suspense
-                    fallback={
-                      <>
-                        <div className="loader-wrapper  position-fixed w-100 h-100 top-0 start-0 d-flex justify-content-center align-items-center">
-                          <span className="loader" />
-                        </div>
-                      </>
-                    }
-                  >
-                    <Outlet />
-                  </Suspense>
-                </div>
+              <div className="main-inner p-3">
+                <Suspense
+                  fallback={
+                    <>
+                      <div className="loader-wrapper  position-fixed w-100 h-100 top-0 start-0 d-flex justify-content-center align-items-center">
+                        <span className="loader" />
+                      </div>
+                    </>
+                  }
+                >
+                  <Outlet />
+                </Suspense>
               </div>
-            </Col>
+            </div>
           </Row>
         </Container>
       </AppLayout>

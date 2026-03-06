@@ -93,12 +93,22 @@ body {
 }
 
 /* Admin sidebar layout – match Twiga-style UI */
+// .sidebar {
+//   display: flex;
+//   flex-direction: column;
+//   height: 100vh;
+//   background-color: #ffffff;
+//   border-right: 1px solid #e5e5e5;
+//   width: ;
+// }
 .sidebar {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  background-color: #ffffff;
-  border-right: 1px solid #e5e5e5;
+    background: var(--theme-white, #ffffff);
+    height: 100vh;
+    border-right: 1px solid var(--theme-border-color, #d2d4d3);
+    max-width: 262px;
+    position: fixed;
+    z-index: 999 !important;
+    transition: all 0.3s ease-out;
 }
 
 .sidebar .nav {
@@ -229,4 +239,10 @@ body {
 .arrow-sidemenu svg {
   display: block;
   transform-origin: center center;
+}
+.main-content {
+    width: calc(100% - 262px);
+    padding: 0;
+    margin-left: 262px;
+    transition: all 0.3s ease-out;
 }
